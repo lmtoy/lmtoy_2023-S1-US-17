@@ -24,7 +24,7 @@ on = {}
 on["VIIZw800"] = [ 107356, 107357, 107358, 107361, 107362, 107363,]    # 23/24 mar
 
 pars1 = {}
-pars1["VIIZw800"] = ""
+pars1["VIIZw800"] = "speczoom=104,3"
 
 pars2 = {}
 pars2["VIIZw800"] = "srdp=1 admit=0"
