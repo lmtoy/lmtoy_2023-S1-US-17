@@ -17,20 +17,17 @@ except:
     print("No LMTOY with runs.py")
     sys.exit(0)
 
-project="2023-S1-US-18"
+project="2023-S1-US-17"
 
-#        obsnums per source (make it negative if not added to the final combination)
 on = {}
-on[''] = [ ]
 
+on["VIIZw800"] = [ 107356, 107357, 107358, 107361, 107362, 107363,]    # 23/24 mar
 
-#        common parameters per source on the first dryrun (run1a, run2a)
 pars1 = {}
-pars1['']   = ""
+pars1["VIIZw800"] = ""
 
-#        common parameters per source on subsequent runs (run1b, run2b)
 pars2 = {}
-pars2['']   = "srdp=1 admit=0"
+pars2["VIIZw800"] = "srdp=1 admit=0"
 
 if __name__ == '__main__':    
     runs.mk_runs(project, on, pars1, pars2)
