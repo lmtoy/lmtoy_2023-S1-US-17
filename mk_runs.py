@@ -4,6 +4,7 @@
 
 import os
 import sys
+import json
 
 from lmtoy import runs
 
@@ -22,6 +23,9 @@ pars1["VIIZw800"] = "speczoom=104,3 badcb=3/3"
 pars2 = {}
 pars2["NGC6232"]  = "srdp=1 admit=0"
 pars2["VIIZw800"] = "srdp=1 admit=0"
+
+#with open(f'{project}_source.json', 'w') as f:
+#    json.dump(on, f, indent=4)
 
 if __name__ == '__main__':    
     runs.mk_runs(project, on, pars1, pars2)
